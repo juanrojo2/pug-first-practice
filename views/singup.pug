@@ -1,0 +1,36 @@
+extends header
+block content
+    .content-form
+        h1 Registrarse
+        form(id="login" action="/register" method="post")
+            .row-form
+                input(type='text'
+                    name='forename' 
+                    placeholder='Nombre'
+                )
+            br
+            .row-form
+                input(type='number'
+                    name='identification' 
+                    placeholder='Número de identificación'
+                )
+            br
+            .row-form
+                input(type='email'
+                    name='email' 
+                    placeholder='Email'
+                )
+            br
+            .row-form   
+                input(
+                    type='password' 
+                    name='password' 
+                    value='' 
+                    placeholder='Contraseña'
+                )
+            br     
+            input(
+                type='submit' 
+                value='Conectar'
+                class='row-form-btn'
+            )

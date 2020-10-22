@@ -1,0 +1,12 @@
+extends header
+block content
+    .content-form
+        h1 ¡Bienvenido!
+        if datos
+            h2 #{datos.email}
+            h2 Lista de Alumnos
+            each nombre in datos.alumnos
+                p.p-names= nombre
+            
+        else
+            h2 Datos no disponibles

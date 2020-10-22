@@ -1,0 +1,20 @@
+extends header
+
+block content
+  h1= title
+  h3 ¡Bienvenido al sistema Master virtual!
+  p Por favor, inicie sesión o registrese para ver la dashboard
+  form(id="index" action="/login" method="get")
+    input(
+      type='submit' 
+      value='Iniciar Sesión'
+      class='row-form-btn'
+      )
+  form(id="index" action="/signup" method="get")
+    input(
+      type='submit' 
+      value='Registrarse'
+      class='row-form-btn'
+      )
+    
+    
